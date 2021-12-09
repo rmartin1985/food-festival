@@ -9,6 +9,13 @@ module.exports = {
         schedule: './assets/js/schedule.js',
         tickets: './assets/js/tickets.js'
     },
+    devServer: {
+      static: {
+        directory: path.join(__dirname, "./")
+      },
+      compress: true,
+      port: 8080,
+    },
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name].bundle.js'
